@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Pecel Lele H. Sutopo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Warung Pecel Lele H. Sutopo</h1>
+    </header>
+    </style>
+    <main>
+      <section class="status">
+        <h2 id="statusMessage">Jam Operasional: 10:00 - 23:00</h2>
+        <p id="currentStatus">
+          Status saat ini: <span id="status">Tutup</span>
+        </p>
+      </section>
+      <section class="introduction">
+        <h2>Selamat Datang di Warung Pecel Lele H. Sutopo!</h2>
+        <p>
+          Ayo segera coba berbagai macam menu lezat kami dan Buktikan sendiri!
+        </p>
+      </section>
+      <section class="services">
+        <h2>Layanan Kami</h2>
+        <label><input type="checkbox" id="dineIn" checked /> Dine-In</label>
+        <label><input type="checkbox" id="takeAway" checked /> Take-Away</label>
+        <label><input type="checkbox" id="delivery" checked /> Delivery (Go-food)</label>
+      </section>
+      <section class="menu">
+        <h2>Menu Utama</h2>
+        <div class="menu-items">
+          <!-- Menu items here -->
+          <div
+            class="menu-item"
+            data-name="Pecel Lele"
+            data-price="13500"
+            data-description="lele goreng yang disajikan dengan sambal dan lalapan segar."
+          >
+            <img src="pecel-lele.jpg" alt="Pecel Lele" />
+            <p>Pecel Lele</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Pecel Ayam"
+            data-price="16000"
+            data-description="ayam goreng yang disajikan dengan sambal dan lalapan segar."
+          >
+            <img src="pecel ayam.jpg" alt="Pecel Ayam" />
+            <p>Pecel Ayam</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Soto Lamongan"
+            data-price="13500"
+            data-description="Soto Lamongan dengan kuahnya yang gurih dan kaya rempah-rempah."
+          >
+            <img src="soto.jpg" alt="Soto Lamongan" />
+            <p>Soto Lamongan</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Tongseng Daging"
+            data-price="16000"
+            data-description="daging kambing atau sapi yang dimasak dalam kuah santan yang gurih dan kaya rempah."
+          >
+            <img src="Tongseng.jpg" alt="Tongseng Daging" />
+            <p>Tongseng Daging</p>
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <h2>Menu Tambahan</h2>
+        <div class="menu-items">
+          <!-- Additional menu items here -->
+          <div
+            class="menu-item"
+            data-name="Tahu"
+            data-price="2000"
+            data-description="Tahu yang dibumbui dengan rempah lalu digoreng."
+          >
+            <img src="Tahu.jpg" alt="Tahu" />
+            <p>Tahu</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Tempe"
+            data-price="2000"
+            data-description="Tempe yang dibumbui dengan rempah lalu digoreng."
+          >
+            <img src="Tempe.jpg" alt="Tempe" />
+            <p>Tempe</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Nasi"
+            data-price="6000"
+            data-description="Nasi Putih"
+          >
+            <img src="Nasi.jpg" alt="Nasi" />
+            <p>Nasi</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Kol Goreng"
+            data-price="7000"
+            data-description="Kol Goreng"
+          >
+            <img src="kol goreng.jpg" alt="Kol Goreng" />
+            <p>Kol Goreng</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Kerupuk Kaleng"
+            data-price="2000"
+            data-description="Saya pastikan masih garing."
+          >
+            <img src="kerupuk kaleng.jpg" alt="Kerupuk Kaleng" />
+            <p>Kerupuk Kaleng</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Kerupuk Udang"
+            data-price="4000"
+            data-description="Satu Bungkus Isi 5-7 Pcs Kerupuk Udang (Random Sesuai Ukuran)."
+          >
+            <img src="kerupuk udang.jpg" alt="Kerupuk Udang" />
+            <p>Kerupuk Udang</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Emping Melinjo"
+            data-price="5000"
+            data-description="Satu Bungkus Isi 3 Pcs Emping Melinjo."
+          >
+            <img src="Emping Melinjo.jpg" alt="Emping Melinjo" />
+            <p>Emping Melinjo</p>
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <h2>Minuman</h2>
+        <div class="menu-items">
+          <!-- Drink items here -->
+          <div
+            class="menu-item"
+            data-name="Es Teh"
+            data-price="5000"
+            data-description="Es Teh Manis."
+          >
+            <img src="Es Teh.jpg" alt="Es Teh" />
+            <p>Es Teh</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Teh Hangat"
+            data-price="4500"
+            data-description="Teh Manis Hangat."
+          >
+            <img src="Teh Hangat.jpg" alt="Teh Hangat" />
+            <p>Teh Hangat</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Es Jeruk"
+            data-price="6000"
+            data-description="Es Jeruk Peras Manis"
+          >
+            <img src="es jeruk.jpg" alt="Es Jeruk" />
+            <p>Es Jeruk</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Jeruk Hangat"
+            data-price="5500"
+            data-description="Jeruk Peras Manis Hangat"
+          >
+            <img src="Jeruk Hangat.jpg" alt="Jeruk Hangat" />
+            <p>Jeruk Hangat</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Teh Tawar Hangat"
+            data-price="3000"
+            data-description="Teh Tawar Hangat."
+          >
+            <img src="Hangat tawar.jpg" alt="Teh Tawar Hangat" />
+            <p>Teh Tawar Hangat</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Es Teh Tawar"
+            data-price="3500"
+            data-description="Es Teh Tawar"
+          >
+            <img src="Tawar Es Teh.jpg" alt="Es Teh Tawar" />
+            <p>Es Teh Tawar</p>
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <h2>Paketan Menu</h2>
+        <div class="menu-items">
+          <!-- Paket menu items here -->
+          <div
+            class="menu-item"
+            data-name="Paket A"
+            data-price="25500"
+            data-description="Paket A terdiri dari Pecel Lele, sambal, lalapan, Nasi, dan Es Teh."
+          >
+            <img src="paketan lele.jpg" alt="Paket A" />
+            <p>Paket A</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Paket B"
+            data-price="28000"
+            data-description="Paket B terdiri dari Pecel Ayam, sambel,lalapan, Nasi, dan Es Jeruk."
+          >
+            <img src="Paketan pecel ayam.jpg" alt="Paket B" />
+            <p>Paket B</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Paket C"
+            data-price="25500"
+            data-description="Paket C terdiri dari Soto Lamongan, Nasi, dan Teh Hangat."
+          >
+            <img src="Paketan soto.jpg" alt="Paket C" />
+            <p>Paket C</p>
+          </div>
+          <div
+            class="menu-item"
+            data-name="Paket D"
+            data-price="28000"
+            data-description="Paket D terdiri dari Tongseng Daging, sambel, lalapan, Nasi, dan Jeruk Hangat."
+          >
+            <img src="Paketan Tongseng.jpg" alt="Paket D" />
+            <p>Paket D</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-info">
+        <h2>Kontak Kami</h2>
+        <p>Telepon: 0821-2243-6091</p>
+        <p>
+          Alamat: Jl. Periuk Jaya Permai 1 No.25, RT.003/RW.005, Periuk Jaya,
+          Kec. Periuk, Kota Tangerang, Banten 15131.
+        </p>
+        <p>++Terima Kasih++</p>
+      </section>
+    </main>
+
+    <!-- Modal for menu details -->
+    <div id="menuModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <p id="modalPrice"></p>
+        <button id="addToCartBtn">Tambahkan ke Keranjang</button>
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <div id="cart">
+      <h2>Keranjang</h2>
+      <ul id="cartItems"></ul>
+      <p id="totalPrice">Total: Rp 0</p>
+      <button id="checkoutBtn">Checkout</button>
+      <button id="clearCartBtn">Batalkan Keranjang</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

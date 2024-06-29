@@ -1,0 +1,217 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #4e342e;
+  margin: 0;
+  padding: 0;
+  background-image: url("cover.jpg"); /* Tambahkan gambar background */
+  background-size: cover; /* Mengatur gambar agar menutupi seluruh background */
+  background-attachment: fixed; /* Membuat background tetap saat scroll */
+  background-position: center; /* Mengatur posisi gambar di tengah */
+}
+
+header {
+  background-color: rgba(
+    121,
+    85,
+    72,
+    0.8
+  ); /* Menggunakan warna dengan transparansi */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative; /* Untuk layering */
+  z-index: 1; /* Agar berada di atas background */
+}
+
+main {
+  padding: 30px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Memberikan background putih transparan */
+  border-radius: 10px;
+  position: relative; /* Untuk layering */
+  z-index: 1; /* Agar berada di atas background */
+}
+
+.status {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.status p {
+  font-size: 18px;
+}
+
+.status span {
+  font-weight: bold;
+}
+
+.status button {
+  background-color: #5d4037;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.status button:hover {
+  background-color: #4e342e;
+}
+
+.introduction {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.introduction p {
+  font-size: 18px;
+  color: #7b4a12;
+}
+
+.services {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services label {
+  margin: 0 10px;
+}
+
+.services input {
+  margin-right: 5px;
+}
+
+.menu {
+  margin-bottom: 40px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu-item {
+  background-color: #efebe9;
+  border: 1px solid #a1887f;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2; /* Agar berada di atas background */
+}
+
+.menu-item img {
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+}
+
+.menu-item p {
+  margin: 10px 0 0;
+}
+
+.contact-info {
+  text-align: center;
+  background-color: #d7ccc8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1; /* Agar berada di atas background */
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3; /* Agar berada di atas background */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 4; /* Agar berada di atas modal */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#cart {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #d7ccc8;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 5; /* Agar berada di atas elemen lainnya */
+}
+
+#cart h2 {
+  margin-top: 0;
+}
+
+#cartItems {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cartItems li {
+  margin-bottom: 10px;
+}
+
+#checkoutBtn,
+#clearCartBtn {
+  background-color: #5d4037;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#checkoutBtn:hover,
+#clearCartBtn:hover {
+  background-color: #4e342e;
+}
